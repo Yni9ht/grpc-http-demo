@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "/proto";
+
+import "google/api/annotations.proto";
+
+service AuthService {
+  // 登录
+  rpc UserInfo(UserInfoReq) returns(UserInfoRes) {
+    option (google.api.http) = {
+      post: "/v1/auth/user/info"
+      body: '*'
+    };
+  }
+}
+
+message UserInfoReq {}
+
+message UserInfoRes {}
