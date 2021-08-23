@@ -1,6 +1,7 @@
 # grpc-http-demo
 
-
+## 前置条件
+1. 安装 ETCD 集群，使用项目根目录中的 `etcd-docker-compose.yml` 快速启动一个 ETCD 集群
 
 ## Run
 1. 在项目根目录执行下列命令，用于生成相关 pb 文件。
